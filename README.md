@@ -61,6 +61,43 @@ Total: ~40 lines per script. Read them, copy them, adapt them.
 
 Run `tools/list` against either `/mcp` endpoint to see the full schema.
 
+## Wire them into Claude Code in one command
+
+```bash
+claude mcp add --transport http nothumansearch https://nothumansearch.ai/mcp
+claude mcp add --transport http aidevboard https://aidevboard.com/mcp
+```
+
+After that, in any Claude Code conversation:
+
+- "find MCP servers for vector databases" → Claude calls NHS `search_agents`, returns ranked list
+- "search AI/ML jobs for LLM fine-tuning, remote" → Claude calls ADB `search_jobs`, returns matches
+
+## Live data
+
+Every tool hits a live database. Confirm with one curl:
+
+```bash
+# NHS — current indexed site count
+curl -s https://nothumansearch.ai/api/v1/stats | jq '{total: .total_sites, mcp_verified: .mcp_verified}'
+
+# ADB — current jobs + companies
+curl -s https://aidevboard.com/api/v1/stats | jq '{jobs: .total_jobs, companies: .total_companies}'
+```
+
+## Weekly snapshots (no API needed)
+
+Three shareable URLs updated weekly — embed in internal dashboards, newsletters, or social posts:
+
+- **NHS MCP ecosystem digest** — <https://nothumansearch.ai/digest> (also `.json` and `.rss`)
+- **ADB AI hiring snapshot** — <https://aidevboard.com/weekly-hiring> (also `.json` and `.rss`)
+- **Enterprise AI research atlas** — <https://8bitconcepts.com/research/overview.html>
+
+## Related repos
+
+- [claude-skills-foundry](https://github.com/unitedideas/claude-skills-foundry) — 3 installable Claude Skills wrapping these same MCPs
+- [nhs-score-check-action](https://github.com/unitedideas/nhs-score-check-action) — GitHub Action to fail CI if your site's agentic readiness score drops
+
 ## Links
 
 - Not Human Search: <https://nothumansearch.ai>
