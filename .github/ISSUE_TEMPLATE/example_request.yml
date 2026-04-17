@@ -1,0 +1,31 @@
+name: Example request
+description: Propose a new MCP agent example for the collection.
+title: "[example] "
+labels: ["example-request"]
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: What MCP agent pattern should this example demonstrate?
+    validations:
+      required: true
+  - type: textarea
+    id: mcp_servers
+    attributes:
+      label: MCP server(s) involved
+      description: Which MCP servers does this example use? Link to each.
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem does it solve
+      description: Why would someone copy this example? What real use case does it unlock?
+    validations:
+      required: true
+  - type: textarea
+    id: sketch
+    attributes:
+      label: Rough sketch (optional)
+      description: Pseudocode, API calls, or architecture notes.
