@@ -16,8 +16,9 @@ Both servers speak standard MCP over HTTP (streamable JSON-RPC 2.0). No auth req
 
 ## Live badges
 
-[![NHS Agentic Score](https://nothumansearch.ai/badge/aidevboard.com)](https://nothumansearch.ai/site/aidevboard.com)
-[![AI Dev Jobs](https://aidevboard.com/badge.svg)](https://aidevboard.com)
+[![NHS Agentic Score](https://nothumansearch.ai/badge/aidevboard.com.svg)](https://nothumansearch.ai/site/aidevboard.com)
+[![AI Dev Jobs — Hiring](https://aidevboard.com/badge/hiring.svg)](https://aidevboard.com)
+[![AI Dev Jobs — Jobs Count](https://aidevboard.com/badge/jobs-count.svg)](https://aidevboard.com)
 
 ## Quickstart
 
