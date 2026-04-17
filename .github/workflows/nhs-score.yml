@@ -1,0 +1,25 @@
+name: NHS Agentic Score Check
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  schedule:
+    # Weekly check every Monday 6am UTC
+    - cron: "0 6 * * 1"
+  workflow_dispatch:
+
+jobs:
+  nhs-score:
+    name: Check Not Human Search agentic readiness score
+    runs-on: ubuntu-latest
+    steps:
+      - name: Verify homepage scores well on NHS
+        uses: unitedideas/nhs-score-check-action@v1
+        with:
+          # This repo's README and examples live inside GitHub — check the
+          # NHS demo target (aidevboard.com) as a dogfood probe that the
+          # action is wired correctly. Swap `domain` for any domain you own.
+          domain: aidevboard.com
+          min-score: 80
