@@ -69,10 +69,11 @@ claude mcp add --transport http nothumansearch https://nothumansearch.ai/mcp
 claude mcp add --transport http aidevboard https://aidevboard.com/mcp
 ```
 
-Or for the NHS side, one-line installer (runs `claude mcp add` if Claude Code is installed, otherwise prints snippets for Cursor, Cline, and Continue):
+Or use the one-line installers (run `claude mcp add` if Claude Code is installed, otherwise print snippets for Cursor, Cline, and Continue):
 
 ```bash
-curl -fsSL https://nothumansearch.ai/install | sh
+curl -fsSL https://nothumansearch.ai/install | sh    # NHS  (search the agentic web)
+curl -fsSL https://aidevboard.com/install    | sh    # ADB  (AI/ML job search)
 ```
 
 After that, in any Claude Code conversation:
