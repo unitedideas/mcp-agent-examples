@@ -19,6 +19,7 @@ Both servers speak standard MCP over HTTP (streamable JSON-RPC 2.0). No auth req
 [![NHS Agentic Score](https://nothumansearch.ai/badge/aidevboard.com.svg)](https://nothumansearch.ai/site/aidevboard.com)
 [![AI Dev Jobs — Hiring](https://aidevboard.com/badge/hiring.svg)](https://aidevboard.com)
 [![AI Dev Jobs — Jobs Count](https://aidevboard.com/badge/jobs-count.svg)](https://aidevboard.com)
+[![SafeSkill 92/100](https://img.shields.io/badge/SafeSkill-92%2F100_Verified%20Safe-brightgreen)](https://safeskill.dev/scan/unitedideas-mcp-agent-examples)
 
 ## Quickstart
 
