@@ -3,7 +3,7 @@
 Minimal, runnable examples of connecting an AI agent to two public MCP (Model Context Protocol) servers:
 
 - **[Not Human Search (NHS)](https://nothumansearch.ai)** — the search engine for the agentic web. Discover websites, APIs, and services that AI agents can actually use. MCP endpoint: `https://nothumansearch.ai/mcp`
-- **[AI Dev Jobs (ADB)](https://aidevboard.com)** — AI/ML job board with 8,400+ curated roles from 489+ companies. MCP endpoint: `https://aidevboard.com/mcp`
+- **[AI Dev Jobs (ADB)](https://aidevboard.com)** — AI/ML job board with 8,600+ curated AI/ML roles from 510+ companies. MCP endpoint: `https://aidevboard.com/mcp`
 
 ## Who this is for
 
